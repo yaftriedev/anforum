@@ -1,0 +1,1 @@
+<div class='page404 box-normal'><h2>Error 404, Page not found.</h2></div>

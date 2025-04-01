@@ -1,0 +1,416 @@
+/* standar */
+.box-normal {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* header */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo a h1 {
+    margin-right: 20px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.header .logo a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.header .search {
+    display: flex;
+    align-items: center;
+}
+
+.header .search input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.header .search input[type="submit"], .header .search .btnheader {
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+/* about */
+
+.about h2 {
+    font-size: 2em;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.about h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 20px;
+}
+
+.about p {
+    font-size: 1em;
+    color: #000;
+    line-height: 1.5em;
+}
+
+.about ul {
+    list-style-type: circle;
+    margin-left: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.about ul li {
+    margin-left: 20px;
+}
+
+.about a {
+    display: inline;
+    font-size: 0.9em;
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    background: none;
+}
+
+.about a:hover {
+    color: #444;
+}
+
+
+/* post page */
+.postform {
+    margin: 50px auto 0px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.postform h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.postform textarea {
+    resize: none;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.postform input {
+    background-color: #5c5c5c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto 0px auto;
+}
+
+/* posts page */
+
+.container {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.posts {
+    margin-left: 10px;
+    width: 65%;
+    float: left;
+}
+
+.return-posts {
+    font-size: 1.2em;
+    color: #444;
+    margin: 20px 0px 0px 25px;
+}
+
+.headerposts {
+    margin-left: 25px;
+    padding: 15px 0px;
+    font-size: 2em;
+    font-weight: bold;
+    display: inline-block;
+    width: 90%;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    line-height: 1.4em;
+}
+
+.posts ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.posts ul li .post-content {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+.posts ul li .post-meta {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.posts ul li .post-meta .author {
+    font-weight: bold;
+}
+
+.posts ul li .post-meta .date {
+    font-style: italic;
+}
+
+.posts ul li .post-actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.posts ul li .post-actions a {
+    padding: 5px 10px;
+    font-size: 0.9em;
+    background-color: #5c5c5c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.posts ul li {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    line-height: 1.4em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+}
+
+.posts ul li .responses {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.posts ul li .responses .response {
+    margin-left: 15px;
+}
+
+.posts ul li .responses a:hover {
+    color: #333;
+}
+
+/* banner ads */
+
+.bannerads {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    float: right;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.banner-item {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.banner-item p {
+    margin: 0;
+    font-size: 1em;
+    color: #333;
+}
+
+.banner-item a {
+    font-size: 0.9em;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.banner-item a:hover {
+    color: #0056b3;
+}
+
+/* pagination */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.pagination .not_are {
+    background-color: #ccc;
+    color: #666;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.pagination a {
+    background-color: #5c5c5c;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #444;
+}
+
+.pagination .actual_page {
+    background-color: #333;
+}
+
+
+/* register and login */
+.auth-form {
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 40%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.msgcharacters {
+    margin-bottom: 15px;
+    font-size: 1em;
+    color: #666;
+}
+
+.auth-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.auth-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.auth-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #5c5c5c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.auth-form input[type="submit"]:hover {
+    background-color: #444;
+}
+
+.auth-form .form-footer {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.auth-form .form-footer a {
+    color: #5c5c5c;
+    text-decoration: none;
+}
+
+.auth-form .form-footer a:hover {
+    text-decoration: underline;
+}
