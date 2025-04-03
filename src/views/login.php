@@ -1,13 +1,3 @@
-<?php 
-
-$err = "";
-
-if (isset($_GET['err'])) {
-    if ($_GET['err'] == "invalid_credentials") { $err = "<p class='err'>Invalid Credentials</p>"; }
-}
-
-?>
-
 <div class="login auth-form">
     <h2>Login</h2>
     <?php echo $msgcharacters; echo $err; ?>

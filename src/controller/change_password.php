@@ -1,7 +1,5 @@
 <?php 
 
-if (!isset($path_test)) { die("Access denied"); }
-
 if (isset($_POST['submit'])) {
 
     $oldpassword = $_POST['oldpassword'];
@@ -29,7 +27,15 @@ if (isset($_POST['submit'])) {
     }
     exit();
 } 
+
 else {
-    header("Location: ?page=change_password&err=err");
-    exit();
+    
+    $err = "";
+
+    if (isset($_GET['err'])) {
+        if ($_GET['err'] == "pdm") { $err = "<p class='err'>Passwords don't match</p>"; }
+    }
+
+    include '../src/views/change_password.php';
+
 }

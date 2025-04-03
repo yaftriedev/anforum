@@ -1,7 +1,5 @@
 <?php 
 
-if (!isset($path_test)) { die("Access denied"); }
-
 if (isset($_POST['submit'])) {
 
     $username = $_POST['username'];
@@ -27,7 +25,14 @@ if (isset($_POST['submit'])) {
 
     exit();
 } 
+
 else {
-    header("Location: ?page=login&err=err");
-    exit();
+
+    $err = "";
+
+    if (isset($_GET['err'])) {
+        if ($_GET['err'] == "invalid_credentials") { $err = "<p class='err'>Invalid Credentials</p>"; }
+    }
+
+    include '../src/views/login.php';
 }

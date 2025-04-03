@@ -14,21 +14,19 @@
 
     <h3>Ads</h3>
 
-    <ul>
-    <?php
+    <ul> 
+        <?php 
+        
+        foreach ($ads as $banner) {
 
-    include 'ads.php';
-
-    foreach ($ads as $banner) {
-
-        $title = htmlspecialchars($banner['Title']);
-        $link = htmlspecialchars($banner['Link']);
-        $description = htmlspecialchars($banner['Description']);
-    
-        echo "<li> <p> <a href='$link' target='_blank'>$title</a>: $description </p> </li>";
-    }
-
-    ?>
+            $title = htmlspecialchars($banner['Title']);
+            $link = htmlspecialchars($banner['Link']);
+            $description = htmlspecialchars($banner['Description']);
+        
+            echo "<li> <p> <a href='$link' target='_blank'>$title</a>: $description </p> </li>";
+        }
+        
+        ?> 
     </ul>
 
 </div>

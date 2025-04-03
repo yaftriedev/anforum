@@ -1,13 +1,3 @@
-<?php 
-
-$err = "";
-
-if (isset($_GET['err'])) {
-    if ($_GET['err'] == "pdm") { $err = "<p class='err'>Passwords don't match</p>"; }
-}
-
-?>
-
 <div class="register auth-form">
     <h2>Change Password</h2>
     <?php echo $msgcharacters; echo $err; ?>

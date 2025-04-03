@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Anonimous Forum</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href='style.css?v=<?php echo time(); ?>'>
+    <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
     <!-- <link rel="stylesheet" href='style.css'> -->
 </head>
 <body>
@@ -13,7 +13,7 @@
     <?php 
 
         // includes and db
-        include '../config.php'
+        include '../config.php';
         include '../src/model.php';
         $conn = conn();
 
@@ -50,7 +50,7 @@
         $url_login = array('post', 'change_password', 'logout');
 
         // header
-        include 'theme/header.php';
+        include "header.php";
 
         // comprove login page
         if (in_array($page, $pages_login)) {
@@ -62,7 +62,6 @@
         // comprove exist page
         if (!file_exists("$folder/$page.php")) {
             $page = 'page_404';
-            $folder = "theme";
         }
 
         // include page

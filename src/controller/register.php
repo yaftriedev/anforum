@@ -1,7 +1,5 @@
 <?php 
 
-if (!isset($path_test)) { die("Access denied"); }
-
 if (isset($_POST['submit'])) {
 
     $username = $_POST['username'];
@@ -33,6 +31,14 @@ if (isset($_POST['submit'])) {
     exit();
 } 
 else {
-    header("Location: ?page=register&err=err");
-    exit();
+    
+    $err = "";
+
+    if (isset($_GET['err'])) {
+        if ($_GET['err'] == "nick_register") { $err = "<p class='err'>Username not allowed. It's already register</p>"; }
+        if ($_GET['err'] == "pdm") { $err = "<p class='err'>Passwords don't match</p>"; }
+    }
+
+    include '../src/views/register.php';
+
 }
