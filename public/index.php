@@ -12,13 +12,9 @@
     
     <?php 
 
-        // config
-        $path_test = "";
-        $post_per_page = 10;
-        $msgcharacters = "<p class='msgcharacters'>Characters allowed: a-z, A-Z, 0-9, ! ? . , : / $ % () @ <br> Other characters will be eliminated.</p>";
-
         // includes and db
-        include 'functions.php';
+        include '../config.php'
+        include '../src/model.php';
         $conn = conn();
 
         // Start session if not already started
@@ -26,25 +22,17 @@
             session_start();
         }
 
-        // args manager - url, page
-
-        if (isset($_GET['url'])) { $url = clearurl($_GET['url']); } 
-        else { 
-
-            if (isset($_GET['page'])) { $page = clearurl($_GET['page']); }
-            else {
-                if (isset($_GET['p'])) { $p = $_GET['p']; $page = "posts"; }
-                else { $page = "about"; }
-            }
-
+        // args manager - page, p
+        if (isset($_GET['p'])) { 
+            $p = clearurl($_GET['p']); 
+        } else {
+            $p = 0;
         }
 
-        // url/page manager
-        $folder = "theme";
-
-        if (isset($url)) {
-            $page = $url;
-            $folder = "url";
+        if (isset($_GET['page'])) { 
+            $page = clearurl($_GET['page']); 
+        } else { 
+            $page = $default_page; 
         }
 
         // args manager - p, q, text
