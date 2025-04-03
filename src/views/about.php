@@ -1,5 +1,3 @@
-<?php if (!isset($path_test)) { die("Access denied"); } ?>
-
 <div class="about box-normal">
     <h2>About</h2>
     <p>This is a simple forum where you can post anything you want. The posts are anonimous.</p>

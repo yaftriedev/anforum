@@ -1,7 +1,5 @@
 <?php 
 
-if (!isset($path_test)) { die("Access denied"); }
-
 $err = "";
 
 if (isset($_GET['err'])) {

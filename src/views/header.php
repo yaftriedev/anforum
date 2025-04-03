@@ -1,5 +1,3 @@
-<?php if (!isset($path_test)) { die("Access denied"); } ?>
-
 <div class="header">
     <div class="logo">
         <a href="?"><h1>The Anonimous Forum</h1></a>
